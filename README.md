@@ -41,7 +41,7 @@ There are three new features added in my final model: scale calories, saturated 
 <iframe src="./data/fat_and_carbohydrates_scatter.html" width=800 height=600 frameBorder=0></iframe>
 <iframe src="./data/fat_and_saturated fat_scatter.html" width=800 height=600 frameBorder=0></iframe>
 
-I chose DecisionTreeRegressor and hyperparameters (find the best of max_dealth=13) in this model. For this model, the trained accuracy is about 96.95%, testing accuracy is about 91.40%, RMSE is about 158.83, and R^2 is about 0.956. The reason that I chose DecisionTreeRegressor instead of LinearRegression is that DecisionTreeRegressor can handle more complicated interaction in the data and can perform non-linear data, which LinearRegression cannot perform. In conclusion, my final model did increase the accuracy, decrease RMSE and make R^2 close to 1. Therefore, I think my model has relatively good ability to predict total fat accurately.
+I chose DecisionTreeRegressor and hyperparameters (find the best of max_dealth=13) in this model. For this model, the trained accuracy is about 97.27%, testing accuracy is about 93.33%, RMSE is about 194.49, and R^2 is about 0.93. The reason that I chose DecisionTreeRegressor instead of LinearRegression is that DecisionTreeRegressor can handle more complicated interaction in the data and can perform non-linear data, which LinearRegression cannot perform. In conclusion, my final model did increase the accuracy, decrease RMSE and make R^2 close to 1. Therefore, I think my model has relatively good ability to predict total fat accurately.
 
 ## Fairness Analysis
 
