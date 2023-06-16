@@ -37,11 +37,11 @@ to my final model.
 
 There are three new features added in my final model: scale calories, saturated fat and carbohydrates as numerical. I think these three are good features because we found that the relationship between total fat and these three features are possitvely coorelated, which means that the more the total fat is, the more these features are.
 
-<iframe src="C:\Users\1kobe\Desktop\dsc80-2023-sp\projects\05-topics-II\data/fat_and_calories_scatter.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="./fig/fat_and_calories_scatter.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="C:\Users\1kobe\Desktop\dsc80-2023-sp\projects\05-topics-II\data/fat_and_carbohydrates_scatter.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="./fig/fat_and_carbohydrates_scatter.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="C:\Users\1kobe\Desktop\dsc80-2023-sp\projects\05-topics-II\data/fat_and_saturated fat_scatter.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="./fig/fat_and_saturated fat_scatter.html" width=800 height=600 frameBorder=0></iframe>
 
 I chose DecisionTreeRegressor and hyperparameters (find the best of max_dealth=13) in this model. For this model, the trained accuracy is about 97.27%, testing accuracy is about 93.33%, RMSE is about 194.49, and R^2 is about 0.93. The reason that I chose DecisionTreeRegressor instead of LinearRegression is that DecisionTreeRegressor can handle more complicated interaction in the data and can perform non-linear data, which LinearRegression cannot perform. In conclusion, my final model did increase the accuracy, decrease RMSE and make R^2 close to 1. Therefore, I think my model has relatively good ability to predict total fat accurately.
 
@@ -52,6 +52,6 @@ To test the fairness of our model, we analyze the RMSE for two groups: the year 
 null hypothesis: the regression's RMSE for year before 2013 and after 2013 are roughly the same.
 alternative hypothesis: the regression's RMSE for year before 2013 and after 2013 are not roughly the same.
 
-<iframe src="C:\Users\1kobe\Desktop\dsc80-2023-sp\projects\05-topics-II\data/permutation.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="./fig/permutation.html" width=800 height=600 frameBorder=0></iframe>
 
 the samples are selected at random. We set the significance level: 5%. After I perform the test 1000 times, I got the p-value: 0.951, which is > 0.05. Therefore, we fail to reject the null hypothesis that the regression's RMSE for year before 2013 and after 2013 are roughly the same. In conclusion, my model is fair.
